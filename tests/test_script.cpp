@@ -1,5 +1,5 @@
 #define CATCH_CONFIG_MAIN
-#include <catch/catch.hpp>// Include the Catch2 header
+#include <catch2/catch.hpp>// Include the Catch2 header
 
 // Include the header file for the function you want to test
 #include "sum.h"

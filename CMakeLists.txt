@@ -15,13 +15,13 @@ add_executable(${PROJECT_NAME} src/src/main.cpp)
 # Link the executable with the library
 target_link_libraries(${PROJECT_NAME} PRIVATE Library)
 
-find_package(Catch2 3 REQUIRED)
-if(NOT TARGET Catch2::Catch2)
-    include_directories("/home/anoj/Catch2/src/catch2") # Update to your Catch2 path
-endif()
+# find_package(Catch2 3 REQUIRED)
+# if(NOT TARGET Catch2::Catch2)
+#     include_directories("/home/anoj/Catch2/src/catch2") # Update to your Catch2 path
+# endif()
 
 add_executable(TestSum tests/test_script.cpp)
-target_link_libraries(TestSum PRIVATE Library Catch2::Catch2)
+target_link_libraries(TestSum PRIVATE Library)
 
 # Include Catch2 for testing
 
