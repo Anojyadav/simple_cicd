@@ -6,7 +6,7 @@
 
 // Define a test case
 TEST_CASE("Sum function test", "[sum]") {
-    REQUIRE(add_num(2, 4) == 5);   // Test for sum of 2 and 3
+    REQUIRE(add_num(2, 4) == 6);   // Test for sum of 2 and 3
     REQUIRE(add_num(-1, 1) == 0);  // Test for sum of -1 and 1
     REQUIRE(add_num(-2, -3) == -5); // Test for sum of -2 and -3
 }
